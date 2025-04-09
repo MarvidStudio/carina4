@@ -5,6 +5,8 @@ export default authMiddleware({
   ignoredRoutes: ['/chatbot'],
 })
 
-export const config = {
-  matcher: ['/((?!.+.[w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
-}
+export const dynamic = 'force-dynamic';
+
+//export const config = {
+//  matcher: ['/((?!.+.[w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
+//}
